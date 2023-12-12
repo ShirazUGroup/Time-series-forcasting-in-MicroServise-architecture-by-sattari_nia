@@ -1,0 +1,196 @@
+{
+  "data": [
+    {
+      "traceID": "1",
+      "spans": [
+        {
+          "spanID": "12",
+          "operationName": "A",
+          "references": [],
+          "startTime": 0,
+          "duration": 10
+        },
+        {
+            "spanID":"13",
+            "operationName":"B",
+            "references":[
+                {
+                    "traceID": "010a6b48ab60d685",
+                    "spanID": "12"
+                }
+            ],
+            "startTime":12,
+            "duration":15
+        },
+        {
+            "spanID":"14",
+            "operationName":"C",
+            "references":[
+                {
+                    "traceID": "010a6b48ab60d685",
+                    "spanID": "13"
+                }
+            ],
+            "startTime":12,
+            "duration":15
+        },
+        {
+            "spanID":"15",
+            "operationName":"E",
+            "references":[
+                {
+                    "traceID": "010a6b48ab60d685",
+                    "spanID": "14"
+                }
+            ],
+            "startTime":12,
+            "duration":15
+        },
+        {
+            "spanID":"16",
+            "operationName":"D",
+            "references":[
+                {
+                    "traceID": "010a6b48ab60d685",
+                    "spanID": "14"
+                }
+            ],
+            "startTime":12,
+            "duration":15
+        }
+      ]
+    },
+    {
+        "traceID":"2",
+        "spans":[
+            {
+                "spanID": "1",
+                "operationName": "A",
+                "references": [],
+                "startTime": 0,
+                "duration": 10
+              },
+              {
+                "spanID":"2",
+                "operationName":"B",
+                "references":[
+                    {
+                        "traceID": "010a6b48ab60d685",
+                        "spanID": "1"
+                    }
+                ],
+                "startTime":12,
+                "duration":15
+            },
+            {
+                "spanID":"3",
+                "operationName":"C",
+                "references":[
+                    {
+                        "traceID": "010a6b48ab60d685",
+                        "spanID": "2"
+                    }
+                ],
+                "startTime":12,
+                "duration":15
+            },
+            {
+                "spanID":"3",
+                "operationName":"C",
+                "references":[
+                    {
+                        "traceID": "010a6b48ab60d685",
+                        "spanID": "2"
+                    }
+                ],
+                "startTime":12,
+                "duration":15
+            },
+            {
+                "spanID":"4",
+                "operationName":"D",
+                "references":[
+                    {
+                        "traceID": "010a6b48ab60d685",
+                        "spanID": "3"
+                    }
+                ],
+                "startTime":12,
+                "duration":15
+            },
+            {
+                "spanID":"5",
+                "operationName":"F",
+                "references":[
+                    {
+                        "traceID": "010a6b48ab60d685",
+                        "spanID": "4"
+                    }
+                ],
+                "startTime":12,
+                "duration":15
+            },
+            {
+                "spanID":"5",
+                "operationName":"F",
+                "references":[
+                    {
+                        "traceID": "010a6b48ab60d685",
+                        "spanID": "4"
+                    }
+                ],
+                "startTime":12,
+                "duration":15
+            }
+        ]
+    },
+    {
+        "traceID":"3",
+        "spans":[
+            {
+                "spanID":"1",
+                "operationName":"B",
+                "references":[],
+                "startTime":0,
+                "duration":15
+            },
+            {
+                "spanID":"2",
+                "operationName":"C",
+                "references":[
+                    {
+                        "traceID": "010a6b48ab60d685",
+                        "spanID": "1"
+                    }
+                ],
+                "startTime":12,
+                "duration":15
+            },
+            {
+                "spanID":"3",
+                "operationName":"D",
+                "references":[
+                    {
+                        "traceID": "010a6b48ab60d685",
+                        "spanID": "2"
+                    }
+                ],
+                "startTime":12,
+                "duration":15
+            },
+            {
+                "spanID":"4",
+                "operationName":"F",
+                "references":[
+                    {
+                        "traceID": "010a6b48ab60d685",
+                        "spanID": "3"
+                    }
+                ],
+                "startTime":12,
+                "duration":15
+            }
+        ]
+    }
+  ]
+}

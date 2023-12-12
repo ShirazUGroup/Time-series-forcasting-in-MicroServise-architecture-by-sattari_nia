@@ -1,0 +1,292 @@
+{
+    "data": [
+        {
+            "traceID": "318a449c9d173ef4",
+            "spans": [
+                {
+                    "traceID": "318a449c9d173ef4",
+                    "spanID": "318a449c9d173ef4",
+                    "flags": 1,
+                    "operationName": "/api/user/login",
+                    "references": [],
+                    "startTime": 1690987192737000,
+                    "duration": 3194,
+                    "tags": [
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "probabilistic"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "float64",
+                            "value": 0.2
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 302
+                        },
+                        {
+                            "key": "http.status_line",
+                            "type": "string",
+                            "value": ""
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "nginx"
+                        },
+                        {
+                            "key": "nginx.worker_pid",
+                            "type": "string",
+                            "value": "8"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.18.0.1:55318"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8080/api/user/login"
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "localhost:8080"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "318a449c9d173ef4",
+                    "spanID": "63126b8506370a65",
+                    "flags": 1,
+                    "operationName": "/api/user/login",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "318a449c9d173ef4",
+                            "spanID": "318a449c9d173ef4"
+                        }
+                    ],
+                    "startTime": 1690987192737379,
+                    "duration": 2815,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "nginx"
+                        },
+                        {
+                            "key": "nginx.worker_pid",
+                            "type": "string",
+                            "value": "8"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.18.0.1:55318"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8080/api/user/login"
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "localhost:8080"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 302
+                        },
+                        {
+                            "key": "http.status_line",
+                            "type": "string",
+                            "value": ""
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "318a449c9d173ef4",
+                    "spanID": "4a33172c17890aa0",
+                    "flags": 1,
+                    "operationName": "user_mmc_get_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "318a449c9d173ef4",
+                            "spanID": "af7fd83672b89866"
+                        }
+                    ],
+                    "startTime": 1690987192738134,
+                    "duration": 249,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "318a449c9d173ef4",
+                    "spanID": "25b4ac3f5abe3bfd",
+                    "flags": 1,
+                    "operationName": "user_mmc_set_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "318a449c9d173ef4",
+                            "spanID": "af7fd83672b89866"
+                        }
+                    ],
+                    "startTime": 1690987192739390,
+                    "duration": 284,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "318a449c9d173ef4",
+                    "spanID": "b4351dc2d483d2d1",
+                    "flags": 1,
+                    "operationName": "user_mongo_find_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "318a449c9d173ef4",
+                            "spanID": "af7fd83672b89866"
+                        }
+                    ],
+                    "startTime": 1690987192738483,
+                    "duration": 754,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "318a449c9d173ef4",
+                    "spanID": "af7fd83672b89866",
+                    "flags": 1,
+                    "operationName": "login_server",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "318a449c9d173ef4",
+                            "spanID": "a9abbb380d35342f"
+                        }
+                    ],
+                    "startTime": 1690987192738120,
+                    "duration": 1691,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": [
+                        "invalid parent span IDs=a9abbb380d35342f; skipping clock skew adjustment"
+                    ]
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "nginx-web-server",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "nginx-thrift"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "C++-0.4.2"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "user-service",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "user-service"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "C++-0.4.2"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

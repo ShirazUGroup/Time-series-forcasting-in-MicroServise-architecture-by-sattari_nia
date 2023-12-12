@@ -1,0 +1,292 @@
+{
+    "data": [
+        {
+            "traceID": "1748a38a71ef0e6e",
+            "spans": [
+                {
+                    "traceID": "1748a38a71ef0e6e",
+                    "spanID": "d0d6bd504a79d04e",
+                    "flags": 1,
+                    "operationName": "user_mmc_get_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1748a38a71ef0e6e",
+                            "spanID": "1e4077439ef3eb39"
+                        }
+                    ],
+                    "startTime": 1691040594777502,
+                    "duration": 1088094,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1748a38a71ef0e6e",
+                    "spanID": "b883e8b64e419bf3",
+                    "flags": 1,
+                    "operationName": "user_mmc_set_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1748a38a71ef0e6e",
+                            "spanID": "1e4077439ef3eb39"
+                        }
+                    ],
+                    "startTime": 1691040595996468,
+                    "duration": 1113,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1748a38a71ef0e6e",
+                    "spanID": "92ad99a693556587",
+                    "flags": 1,
+                    "operationName": "user_mongo_find_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1748a38a71ef0e6e",
+                            "spanID": "1e4077439ef3eb39"
+                        }
+                    ],
+                    "startTime": 1691040595865708,
+                    "duration": 515,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1748a38a71ef0e6e",
+                    "spanID": "1e4077439ef3eb39",
+                    "flags": 1,
+                    "operationName": "login_server",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1748a38a71ef0e6e",
+                            "spanID": "a3af99753f0c5d02"
+                        }
+                    ],
+                    "startTime": 1691040594777481,
+                    "duration": 1220155,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": [
+                        "invalid parent span IDs=a3af99753f0c5d02; skipping clock skew adjustment"
+                    ]
+                },
+                {
+                    "traceID": "1748a38a71ef0e6e",
+                    "spanID": "1748a38a71ef0e6e",
+                    "flags": 1,
+                    "operationName": "/api/user/login",
+                    "references": [],
+                    "startTime": 1691040594597000,
+                    "duration": 1401053,
+                    "tags": [
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "probabilistic"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "float64",
+                            "value": 0.2
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 302
+                        },
+                        {
+                            "key": "http.status_line",
+                            "type": "string",
+                            "value": ""
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "nginx"
+                        },
+                        {
+                            "key": "nginx.worker_pid",
+                            "type": "string",
+                            "value": "8"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.18.0.1:36184"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8080/api/user/login"
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "localhost:8080"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1748a38a71ef0e6e",
+                    "spanID": "e922ecfe9bb6740f",
+                    "flags": 1,
+                    "operationName": "/api/user/login",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1748a38a71ef0e6e",
+                            "spanID": "1748a38a71ef0e6e"
+                        }
+                    ],
+                    "startTime": 1691040594597189,
+                    "duration": 1400864,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "nginx"
+                        },
+                        {
+                            "key": "nginx.worker_pid",
+                            "type": "string",
+                            "value": "8"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.18.0.1:36184"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8080/api/user/login"
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "localhost:8080"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 302
+                        },
+                        {
+                            "key": "http.status_line",
+                            "type": "string",
+                            "value": ""
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "user-service",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "user-service"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "C++-0.4.2"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "nginx-web-server",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "nginx-thrift"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "C++-0.4.2"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

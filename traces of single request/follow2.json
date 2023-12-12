@@ -1,0 +1,510 @@
+{
+    "data": [
+        {
+            "traceID": "1d9c9d9654579edd",
+            "spans": [
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "bf660eb20e93a9a7",
+                    "flags": 1,
+                    "operationName": "user_mmc_get_user_id_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "77f39f60e5b11c4a"
+                        }
+                    ],
+                    "startTime": 1691041573139514,
+                    "duration": 149,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "a80efbab41bd2237",
+                    "flags": 1,
+                    "operationName": "user_mongo_find_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "77f39f60e5b11c4a"
+                        }
+                    ],
+                    "startTime": 1691041573139745,
+                    "duration": 991,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "39f1156a88ef446a",
+                    "flags": 1,
+                    "operationName": "user_mmc_get_user_id_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "617c31c5f0ff0456"
+                        }
+                    ],
+                    "startTime": 1691041573139515,
+                    "duration": 152,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "617c31c5f0ff0456",
+                    "flags": 1,
+                    "operationName": "get_user_id_server",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "f5bb86dce5a6e481"
+                        }
+                    ],
+                    "startTime": 1691041573139503,
+                    "duration": 271,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "737de6424719035f",
+                    "flags": 1,
+                    "operationName": "user_mmc_set_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "77f39f60e5b11c4a"
+                        }
+                    ],
+                    "startTime": 1691041573140795,
+                    "duration": 238,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "77f39f60e5b11c4a",
+                    "flags": 1,
+                    "operationName": "get_user_id_server",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "f5bb86dce5a6e481"
+                        }
+                    ],
+                    "startTime": 1691041573139503,
+                    "duration": 1563,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "ddff76c5483a0047",
+                    "flags": 1,
+                    "operationName": "follow_server",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "f5bb86dce5a6e481"
+                        }
+                    ],
+                    "startTime": 1691041573141266,
+                    "duration": 905,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "d156e168ebfaf723",
+                    "flags": 1,
+                    "operationName": "social_graph_redis_update_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "ddff76c5483a0047"
+                        }
+                    ],
+                    "startTime": 1691041573141362,
+                    "duration": 586,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "18f22273e5b682e6",
+                    "flags": 1,
+                    "operationName": "mongo_update_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "ddff76c5483a0047"
+                        }
+                    ],
+                    "startTime": 1691041573141365,
+                    "duration": 583,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "6fa1ae5e1f36f4b6",
+                    "flags": 1,
+                    "operationName": "social_graph_mongo_update_client",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "ddff76c5483a0047"
+                        }
+                    ],
+                    "startTime": 1691041573141440,
+                    "duration": 617,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "f5bb86dce5a6e481",
+                    "flags": 1,
+                    "operationName": "follow_with_username_server",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "d0f1518ad2eae82a"
+                        }
+                    ],
+                    "startTime": 1691041573139309,
+                    "duration": 2897,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "d3cdefedd7772784",
+                    "flags": 1,
+                    "operationName": "/api/user/follow",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "1d9c9d9654579edd"
+                        }
+                    ],
+                    "startTime": 1691041573138732,
+                    "duration": 4053,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "nginx"
+                        },
+                        {
+                            "key": "nginx.worker_pid",
+                            "type": "string",
+                            "value": "8"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.18.0.1:36518"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8080/api/user/follow"
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "localhost:8080"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 302
+                        },
+                        {
+                            "key": "http.status_line",
+                            "type": "string",
+                            "value": ""
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p3",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "1d9c9d9654579edd",
+                    "flags": 1,
+                    "operationName": "/api/user/follow",
+                    "references": [],
+                    "startTime": 1691041573138000,
+                    "duration": 4785,
+                    "tags": [
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "probabilistic"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "float64",
+                            "value": 0.2
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 302
+                        },
+                        {
+                            "key": "http.status_line",
+                            "type": "string",
+                            "value": ""
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "nginx"
+                        },
+                        {
+                            "key": "nginx.worker_pid",
+                            "type": "string",
+                            "value": "8"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.18.0.1:36518"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "POST"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8080/api/user/follow"
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "localhost:8080"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p3",
+                    "warnings": null
+                },
+                {
+                    "traceID": "1d9c9d9654579edd",
+                    "spanID": "d0f1518ad2eae82a",
+                    "flags": 1,
+                    "operationName": "Follow",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "1d9c9d9654579edd",
+                            "spanID": "d3cdefedd7772784"
+                        }
+                    ],
+                    "startTime": 1691041573138817,
+                    "duration": 3647,
+                    "tags": [
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p3",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "user-service",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "user-service"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "C++-0.4.2"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "social-graph-service",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "social-graph-service"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "C++-0.4.2"
+                        }
+                    ]
+                },
+                "p3": {
+                    "serviceName": "nginx-web-server",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "nginx-thrift"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "C++-0.4.2"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}
